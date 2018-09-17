@@ -67,6 +67,8 @@ void loop() {
   Serial.print(" *C ");
   Serial.print(hif);
   Serial.println(" *F");
-  Serial.println(sensorValue, DEC);  // prints the value read
+  Serial.println(sensorValue, DEC);  // prints the value read for MQ7
+  Serial.println(" PPM Gas CO");
+
  
 }
