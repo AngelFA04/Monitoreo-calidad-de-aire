@@ -6,6 +6,10 @@
  
     de internet
  -Time   https://www.prometec.net/time-arduino/
+ 
+ Ubuntu linux
+ sudo chmod 666 /dev/ttyACM0
+ 
  combinando los sensores dht11 y Mq7
  nos basamos en el codigo dht11 e incorporamos mq7
 */
