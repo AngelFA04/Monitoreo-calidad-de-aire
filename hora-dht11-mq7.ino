@@ -1,5 +1,11 @@
 /* 
+ Liberias 
+     de arduino
+ -Adafruit unified sensor
+ -DHT
  
+    de internet
+ -Time   https://www.prometec.net/time-arduino/
  combinando los sensores dht11 y Mq7
  nos basamos en el codigo dht11 e incorporamos mq7
 */
@@ -7,7 +13,7 @@
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 
-// incluir el tiempo https://www.prometec.net/time-arduino/
+// incluir el tiempo 
 #include <Time.h>
  
 // Definimos el pin digital donde se conecta el sensor
@@ -19,7 +25,7 @@
 int sensorValue;
 
 // Tiempo1, son los mili segundos entre lectura
-int tiempo1 = 1000 * 60 * 30;
+int tiempo1 = 1000*60;
  
 // Inicializamos el sensor DHT11
 DHT dht(DHTPIN, DHTTYPE);
@@ -29,7 +35,7 @@ void setup() {
   // Sets the data rate (speed) in bits per second (baud) for serial data transmission. 
   //For communicating with the computer, use one of these rates: 
   //300, 600, 1200, 2400, 4800, 9600, 14400, 19200, 28800, 38400, 57600, or 115200.
-  Serial.begin(4800);
+  Serial.begin(9600);
   
   // fijando hora,minutos segundos dia mes año
   setTime(13,55,00,1,10,2018);
