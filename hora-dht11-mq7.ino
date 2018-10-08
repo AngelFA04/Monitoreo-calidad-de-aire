@@ -8,6 +8,7 @@
  -Time   https://www.prometec.net/time-arduino/
  
  Ubuntu linux
+ copiar y pegar para dar permiso al puerto
  sudo chmod 666 /dev/ttyACM0
  
  combinando los sensores dht11 y Mq7
