@@ -103,18 +103,20 @@ void loop() {
   Serial.print(" Humedad: ");
   Serial.print(h);
   Serial.print(" % ");
-  Serial.print("Temperatura: ");
+  Serial.print("Temp: ");
   Serial.print(t);
   Serial.print(" *C ");
   Serial.print(f);
   Serial.print(" *F ");
-  Serial.print("indice de calor: ");
+  Serial.print("i calor: ");
   Serial.print(hic);
   Serial.print(" *C ");
   Serial.print(hif);
   Serial.print(" *F ");
   Serial.print(" Gas CO ");
   Serial.print(sensorValue, DEC);  // prints the value read for MQ7
+  Serial.print(" PPM");
+   Serial.print(" Gas H2 "); 
   Serial.print(sensorValue1, DEC);  // prints the value read for MQ8
   Serial.println(" PPM");
  
